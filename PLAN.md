@@ -46,11 +46,9 @@ Keep 메모가 갤러리 뷰로 노출되며, Claude Notion MCP로 Keep 데이�
 |---|---|
 | 2026-08-15 | `keep-to-notion/` 초기 구현 (keep_client, notion_wrapper, mapper, sync, main, create_database, get_master_token, README) |
 | 2026-08-15 | `CLAUDE.md` / `PLAN.md` 작업 규칙 및 진실 공급원 문서 추가 |
+| 2026-08-15 | PLAN.md 자동 동기화 Stop 훅 구현 (`.claude/settings.json`, `.claude/hooks/sync-plan.sh`). PLAN.md에 커밋되지 않은 변경이 있으면 세션 종료 시 자동 커밋 후 main에 직접 push (규칙 5의 명시적 예외) |
 
 ## 남은 작업
 
 - [ ] 실제 Google 계정 / Notion DB로 end-to-end 동작 검증 (README "검증 방법" 참고)
 - [ ] Notion DB 갤러리 뷰 생성 및 확인
-- [ ] (선택) PLAN.md 수정 시 자동 커밋하는 Stop 훅 실제 구성 여부 결정
-
-<!-- sync-plan.sh 훅 테스트: 2026-08-15T01:19:20Z -->
