@@ -1,0 +1,6 @@
+gkeepapi
+gpsoauth
+notion-client
+python-dotenv
+schedule
+keyring
