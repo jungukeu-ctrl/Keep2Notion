@@ -52,3 +52,5 @@ Keep 메모가 갤러리 뷰로 노출되며, Claude Notion MCP로 Keep 데이�
 - [ ] 실제 Google 계정 / Notion DB로 end-to-end 동작 검증 (README "검증 방법" 참고)
 - [ ] Notion DB 갤러리 뷰 생성 및 확인
 - [ ] (선택) PLAN.md 수정 시 자동 커밋하는 Stop 훅 실제 구성 여부 결정
+
+<!-- sync-plan.sh 훅 테스트: 2026-08-15T01:19:20Z -->
