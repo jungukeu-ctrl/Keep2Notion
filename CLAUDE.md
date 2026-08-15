@@ -52,3 +52,7 @@
 
 - main에는 직접 push하지 않는다.
 - 개발 브랜치는 매 세션 시작 시 `PLAN.md`에서 확인한다.
+- **예외:** `PLAN.md` 자동 동기화(Stop 훅, `.claude/hooks/sync-plan.sh`)만 main에 직접
+  push한다. 이 훅은 세션 종료 시 `PLAN.md`에 커밋되지 않은 변경이 있으면 그 시점의
+  현재 브랜치 `HEAD`를 통째로 `origin main`에 push한다 (PLAN.md 한 파일만 골라 올리는
+  것이 아님에 유의). push 실패는 세션을 막지 않고 조용히 넘어간다.
